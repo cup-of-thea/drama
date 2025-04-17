@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Middleware\Admin;
 use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
 
@@ -10,6 +11,11 @@ Route::get('/', function () {
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
     ->name('dashboard');
+
+Route::view('dashboard/users', 'dashboard.users')
+    ->middleware(['auth', 'verified'])
+    ->middleware(Admin::class)
+    ->name('dashboard.users');
 
 Route::middleware(['auth'])->group(function () {
     Route::redirect('settings', 'settings/profile');
