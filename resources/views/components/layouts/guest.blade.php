@@ -3,13 +3,13 @@
 <head>
     @include('partials.head')
 </head>
-<body class="min-h-screen bg-white dark:bg-zinc-800">
+<body class="min-h-screen bg-white dark:bg-zinc-800 text-off-white">
 <div class="isolate min-h-screen overflow-hidden bg-gray-900">
     <img alt="" src="{{ Vite::asset('resources/img/desktop-background-min.jpg') }}" class="hidden lg:block absolute w-full h-full -z-1 object-cover" />
     <img alt="" src="{{ Vite::asset('resources/img/mobile-background-min.jpg') }}" class="lg:hidden block absolute w-full -z-1 object-cover" />
-    <div class="mx-auto max-w-7xl px-6 pb-96 pt-24 text-center sm:pt-32 lg:px-8">
+    <div class="mx-auto max-w-7xl px-6 pb-96 pt-48 text-center sm:pt-48 lg:px-8">
         <div class="mx-auto max-w-4xl">
-            <h2 class="mt-2 uppercase text-balance text-5xl font-semibold tracking-tight text-white sm:text-6xl">
+            <h2 class="font-etude mt-2 uppercase text-balance text-5xl font-semibold tracking-tight sm:text-6xl">
                 Drama Queerz
             </h2>
         </div>
@@ -17,14 +17,14 @@
 
             <a type="button"
                     href="https://bsky.app/profile/dramaqueerz.bsky.social"
-                    class="uppercase inline-flex items-center gap-x-2 rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                    class="app-button">
                 <x-ri-bluesky-fill class="-ml-0.5 size-5"/>
                 BlueSky
             </a>
 
             <a type="button"
                     href="https://www.instagram.com/dramaqueerz"
-                    class="uppercase inline-flex items-center gap-x-2 rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                    class="app-button">
                 <x-ri-instagram-line class="-ml-0.5 size-5"/>
                 Instagram
             </a>
@@ -35,35 +35,38 @@
         <div class="-mt-80">
             <div class="mx-auto max-w-7xl px-6 lg:px-8">
                 <div class="mx-auto grid max-w-md grid-cols-1 gap-8 lg:max-w-4xl lg:grid-cols-2">
-                    <div class="flex flex-col justify-between rounded-3xl bg-white p-8 shadow-xl ring-1 ring-gray-900/10 sm:p-10">
-                        <div class="bg-white py-4">
+                    <div class="app-card">
+                        <div class="py-4">
                             <livewire:newsletter />
                         </div>
                     </div>
-                    <div class="flex flex-col justify-between rounded-3xl bg-white p-8 shadow-xl ring-1 ring-gray-900/10 sm:p-10">
-                        <div class="bg-white py-4">
+                    <div class="app-card">
+                        <div class="py-4">
                             <div class="mx-auto max-w-7xl px-6 lg:px-8">
-                                <h3 class="uppercase max-w-2xl text-center text-balance text-3xl font-semibold tracking-tight text-gray-900">
+                                <h3 class="font-etude uppercase max-w-2xl text-center text-balance text-2xl font-semibold tracking-tight text-off-white">
                                     Comment les rats sont morts
                                 </h3>
-                                <p class="mt-6 text-center text-base/7 text-gray-600">Explicabo quo fugit vel facere
-                                    ullam corrupti non dolores. Expedita eius sit sequi.</p>
+                                <p class="mt-6 text-center text-xs text-off-white/90">
+                                    Vous voulez voir ce film d'horreur expérimental tourné en super 16mm, auto-produit et porté par
+                                    une équipe 100% queer ? <span class="font-bold">Spectateurices, associations & cinémas</span>,
+                                    aidez-nous à organiser une tournée et emmener le film à la rencontre de son public !
+                                </p>
                                 <div class="flex gap-x-4 mt-10 justify-center">
                                     <a type="button"
                                        href="https://docs.google.com/forms/d/e/1FAIpQLSfdAK6GbLaVMPlI2XCQQ4QQ5obAFdi-SFHXxEKbA_qST7Gf4A/viewform"
-                                            class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                                            class="app-callbutton">
                                         Répondre au formulaire
                                     </a>
                                 </div>
                                 <div class="flex gap-x-4 mt-6 justify-center">
                                     <a type="button"
                                             href="https://bsky.app/profile/dramaqueerz.bsky.social"
-                                            class="inline-flex items-center gap-x-2 rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                                            class="app-callbutton">
                                         <x-ri-bluesky-fill class="-ml-0.5 size-5"/>
                                     </a>
                                     <a type="button"
                                             href="https://www.instagram.com/dramaqueerz"
-                                            class="inline-flex items-center gap-x-2 rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                                            class="app-callbutton">
                                         <x-ri-instagram-line class="-ml-0.5 size-5"/>
                                     </a>
                                 </div>

@@ -1,3 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Sigmar+One&display=swap");
+
+@font-face {
+    font-family: EtudeNoire;
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/etude-noire-bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: EtudeNoire;
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/etude-noire-light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: EtudeNoire;
+    font-style: normal;
+    font-weight: 600;
+    src: url("../fonts/etude-noire-medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: EtudeNoire;
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/etude-noire-light.ttf") format("truetype");
+}
+
 @import 'tailwindcss';
 @import '../../vendor/livewire/flux/dist/flux.css';
 
@@ -9,7 +39,12 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-etude: 'EtudeNoire', sans-serif;
+    --font-sans : 'Rethink Sans', sans-serif;
+
+    --color-off-white: #F5F2EC;
+    --color-yellow: #FFE139;
+    --color-dark: #040300;
 
     --color-zinc-50: #fafafa;
     --color-zinc-100: #f5f5f5;
@@ -45,6 +80,7 @@
     ::file-selector-button {
         border-color: var(--color-gray-200, currentColor);
     }
+
 }
 
 [data-flux-field]:not(ui-radio, ui-checkbox) {
@@ -64,3 +100,24 @@ select:focus[data-flux-control] {
 /* \[:where(&)\]:size-4 {
     @apply size-4;
 } */
+
+@layer components {
+    .app-button {
+        @apply uppercase inline-flex items-center gap-x-2 rounded-md
+        border border-white/50 border-2 px-6 py-4 text-sm font-semibold text-off-white shadow-sm hover:bg-yellow-500 hover:text-dark hover:border-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600;
+    }
+
+    .app-callbutton {
+        @apply uppercase inline-flex items-center gap-x-2 rounded-md
+            bg-yellow
+        px-6 py-4 text-sm font-semibold text-dark shadow-sm hover:bg-yellow-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600;
+    }
+
+    .app-card {
+        @apply
+            backdrop-blur-sm
+            bg-gradient-to-b from-dark/20 to-dark/60
+            border border-white/50 border-2
+        flex flex-col justify-between rounded-3xl p-8 shadow-xl ring-1 ring-gray-900/10 sm:p-10;
+    }
+}
