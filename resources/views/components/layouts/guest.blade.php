@@ -13,11 +13,12 @@
         </div>
         <div class="relative mt-6 flex items-center justify-center gap-x-6 sm:gap-x-8">
 
-            <button type="button"
+            <a type="button"
+                    href="https://bsky.app/profile/dramaqueerz.bsky.social"
                     class="uppercase inline-flex items-center gap-x-2 rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
                 <x-ri-bluesky-fill class="-ml-0.5 size-5"/>
                 BlueSky
-            </button>
+            </a>
 
             <a type="button"
                     href="https://www.instagram.com/dramaqueerz"
@@ -53,10 +54,11 @@
                                     </a>
                                 </div>
                                 <div class="flex gap-x-4 mt-6 justify-center">
-                                    <button type="button"
+                                    <a type="button"
+                                            href="https://bsky.app/profile/dramaqueerz.bsky.social"
                                             class="inline-flex items-center gap-x-2 rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
                                         <x-ri-bluesky-fill class="-ml-0.5 size-5"/>
-                                    </button>
+                                    </a>
                                     <a type="button"
                                             href="https://www.instagram.com/dramaqueerz"
                                             class="inline-flex items-center gap-x-2 rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
