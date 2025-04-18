@@ -4,7 +4,9 @@
     @include('partials.head')
 </head>
 <body class="min-h-screen bg-white dark:bg-zinc-800">
-<div class="isolate overflow-hidden bg-gray-900">
+<div class="isolate min-h-screen overflow-hidden bg-gray-900">
+    <img alt="" src="{{ Vite::asset('resources/img/desktop-background-min.jpg') }}" class="hidden lg:block absolute w-full h-full -z-1 object-cover" />
+    <img alt="" src="{{ Vite::asset('resources/img/mobile-background-min.jpg') }}" class="lg:hidden block absolute w-full -z-1 object-cover" />
     <div class="mx-auto max-w-7xl px-6 pb-96 pt-24 text-center sm:pt-32 lg:px-8">
         <div class="mx-auto max-w-4xl">
             <h2 class="mt-2 uppercase text-balance text-5xl font-semibold tracking-tight text-white sm:text-6xl">
@@ -29,7 +31,7 @@
 
         </div>
     </div>
-    <div class="flow-root bg-white pb-24 sm:pb-32">
+    <div class="flow-root pb-24 sm:pb-32">
         <div class="-mt-80">
             <div class="mx-auto max-w-7xl px-6 lg:px-8">
                 <div class="mx-auto grid max-w-md grid-cols-1 gap-8 lg:max-w-4xl lg:grid-cols-2">
