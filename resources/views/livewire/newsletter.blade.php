@@ -59,7 +59,7 @@ new class extends Component {
         <p class="mt-10 text-center italic text-xs text-off-white/50">
             En validant ce formulaire, je consens à l'utilisation de mes données personnelles
             pour être tenu·e au courant des actualités de Drama Queerz. Plus d'infos sur
-            <a href="#" class="underline not-italic text-off-white">
+            <a href="{{ route('politique') }}" class="underline not-italic text-off-white">
                 Politique&nbsp;de&nbsp;confidentialité
             </a>
         </p>
