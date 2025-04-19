@@ -65,7 +65,7 @@
                                         <x-ri-bluesky-fill class="-ml-0.5 size-5"/>
                                     </a>
                                     <a type="button"
-                                            href="https://www.instagram.com/dramaqueerz"
+                                            href="https://www.instagram.com/commentlesrats/"
                                             class="app-callbutton">
                                         <x-ri-instagram-line class="-ml-0.5 size-5"/>
                                     </a>
