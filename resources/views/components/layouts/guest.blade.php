@@ -61,12 +61,12 @@
                                 <div class="flex gap-x-4 mt-6 justify-center">
                                     <a type="button"
                                             href="https://bsky.app/profile/dramaqueerz.bsky.social"
-                                            class="app-callbutton">
+                                            class="app-button">
                                         <x-ri-bluesky-fill class="-ml-0.5 size-5"/>
                                     </a>
                                     <a type="button"
                                             href="https://www.instagram.com/commentlesrats/"
-                                            class="app-callbutton">
+                                            class="app-button">
                                         <x-ri-instagram-line class="-ml-0.5 size-5"/>
                                     </a>
                                 </div>
